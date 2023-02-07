@@ -1,0 +1,1 @@
+This is just a [Python API tutorial](https://www.youtube.com/watch?v=0sOvCWFmrtA&list=LL&index=3&t=19s&ab_channel=freeCodeCamp.org) I followed to prepare for my internship.
