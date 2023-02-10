@@ -4,6 +4,17 @@ on: [push, pull_request]
 
 jobs:
   job1:
+    env:
+      FASTAPI_DB_URL: ${{ secrets.FASTAPI_DB_URL}}
+      FASTAPI_SECRET_KEY: ${{ secrets.FASTAPI_SECRET_KEY}}
+      FASTAPI_ALGORITHM: ${{ secrets.FASTAPI_ALGORITHM}}
+      FASTAPI_TOKEN_EXPIRE_MINUTES: ${{ secrets.FASTAPI_TOKEN_EXPIRE_MINUTES}}
+      DB_USERNAME: ${{ secrets.DB_USERNAME}}
+      DB_PASSWORD: ${{ secrets.DB_PASSWORD}}
+      DB_HOSTNAME: ${{ secrets.DB_HOSTNAME}}
+      DB_PORT: ${{ secrets.DB_PORT}}
+      DB_NAME: ${{ secrets.DB_NAME}}
+
     runs-on: ubuntu-latest
     steps:
       - name: pulling git repo
