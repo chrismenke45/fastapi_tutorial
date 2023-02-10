@@ -6,7 +6,6 @@ jobs:
   job1:
     env:
       FASTAPI_DB_URL: postgresql://${{secrets.DB_USERNAME}}:${{secrets.DB_PASSWORD}}@${{secrets.DB_HOSTNAME}}:5432/${{secrets.DB_NAME}}
-      'postgresql://{settings.database_username}:{settings.database_password}@{settings.database_hostname}:{settings.database_port}/{settings.database_name}'
       FASTAPI_SECRET_KEY: ${{ secrets.FASTAPI_SECRET_KEY}}
       FASTAPI_ALGORITHM: ${{ secrets.FASTAPI_ALGORITHM}}
       FASTAPI_TOKEN_EXPIRE_MINUTES: ${{ secrets.FASTAPI_TOKEN_EXPIRE_MINUTES}}
